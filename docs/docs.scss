@@ -78,7 +78,7 @@ body {
 }
 
 .monterail-link {
-  color: #D20C03
+  color: #EC1923
 }
 
 .button--github {
@@ -96,10 +96,18 @@ body {
   text-decoration: none;
 }
 
-.version {
+a.version {
   position: absolute;
   bottom: rem(-7px);
   font-size: rem(20px);
-  color: $secondary-color;
   transform: translateX(-100%);
+  text-decoration: none;
+
+  &:link, &:visited {
+    color: $primary-color;
+  }
+
+  &:hover {
+    color: $secondary-color;
+  }
 }
